@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Play:wght@400;700&display=swap');
+
+body {
+    font-family: 'Balsamiq+Sans', sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #BFBFBF;
+    color: #304d3f;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.main {
+    display: none;
+}
+
+
+.question {
+    font-size: 6em;
+}
+
+
+.ans-row {
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+}
+
+
+.answer {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    margin: .5em;
+    cursor: pointer;
+    background-color: #d4d4d4;
+}
+
+
+.answer:hover {
+    background-color: #eaeaea;
+}
+
+
+.container_h3 {
+    margin-bottom: 10px;
+}
+
+
+.start-btn {
+    font-size: 30px;
+    padding: .5em;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #48735F;
+    color: black;
+}
+
+
+.start-btn:hover {
+    background: #eaeaea;
+    background-color: #4F8C6F;
+    color: #eaeaea;
+}
+
+
+.countdown-line {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #d4d4d4; /* Background color of the progress bar */
+    border: 1px solid black; /* Black border */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 10px; /* Space below answer buttons */
+}
+
+.countdown-fill {
+    position: absolute;
+    height: 100%;
+    background-color: #4F8C6F; /* Progress color */
+    border-radius: 5px; /* Rounded corners */
+    width: 100%; /* Start at full width */
+    transition: width 1s linear; /* Smooth transition */
+}
